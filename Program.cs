@@ -11,7 +11,7 @@ namespace ICSFileReader
         static async Task Main()
         {
             // Read Calendar Online
-            var olineSchedule = WebRequest.Create("https://gist.githubusercontent.com/egbakou/2f9ea8129fcfb58b80eca78f1a6d1387/raw/a82a9133e2ee5ecce8a6dd19c5d4aad172e5ccbc/cours.ics");
+            var olineSchedule = WebRequest.Create("https://github.com/20NN1A05F1/semantice-cybernetices");
             var response = await olineSchedule.GetResponseAsync().ConfigureAwait(false);
             var stream = response.GetResponseStream();
             
